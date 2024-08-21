@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website com Login e Cadastro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+
+    <!-- JS para Carregar as Particulas-->
+    
+    <script defer src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+   
+    <script defer src="particlesJS-config.json">
+        var count_particles, stats, update; stats = new Stats; 
+        stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+        
+     </script>
+
+    <!-- JS para Carregar as Particulas-->
+    
+</head>
+<body>
+    <!-- particles.js container --> 
+
+    <div id="particles-js">
+
+        <header>
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Servicos</a>
+                <a href="#">Contato</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        </header><!-- Fim do Header -->
+
+        <div class="wrapper">
+
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+
+
+            <div class="form-box login">
+                <h2>Login</h2>
+
+                <form action="#">
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label class="text-label">Email</label>
+                    </div><!-- Fim da Input-Box -->
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password">
+                        <label class="text-label2">Password</label>
+                    </div><!-- Fim da Input-Box -->
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Lembre-se de mim</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div><!-- Fim da Remember Forgot -->
+                    <button type="submit" class="btn">Login</button>
+
+                    <div class="login-register">
+                        <p>Náo possui conta? <a href="#" class="register-link">Cadastre-se</a></p>
+                    </div>
+
+                </form><!-- Fim do Formulario -->
+            </div><!-- Fim do Form Box-->
+
+            <div class="form-box register">
+                <h2>Cadastre-se</h2>
+
+                <form action="#">
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label class="text-label">Username</label>
+                    </div><!-- Fim da Input-Box -->
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label class="text-label">Email</label>
+                    </div><!-- Fim da Input-Box -->
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password">
+                        <label class="text-label2">Password</label>
+                    </div><!-- Fim da Input-Box -->
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Li e acordo com os termos</label>
+                    </div><!-- Fim da Remember Forgot -->
+                    <button type="submit" class="btn">Cadastre-se</button>
+
+                    <div class="login-register">
+                        <p>Já possui uma conta? <a href="#" class="login-link">Login</a></p>
+                    </div>
+
+                </form><!-- Fim do Formulario -->
+            </div><!-- Fim do Form Cadastro-->
+
+
+        </div><!-- Fim do Wrapper-->
+
+
+
+
+    </><!-- Div das Particulas-->
+    
+     <script defer src="JS/app.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
